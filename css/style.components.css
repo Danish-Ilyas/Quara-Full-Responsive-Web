@@ -1,0 +1,119 @@
+.main{
+
+}
+.header{
+
+}
+.header a,li{
+    font-weight: 12px;
+}
+.banner{
+    margin-top: -17%;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+}
+.banner-img h3{
+    padding-top: 18rem;
+}
+.banner .banner-img p{
+    margin-bottom: 8rem;
+}
+/* portfolio */
+.work{
+    background-color: rgb(223, 228, 238);
+}
+.work .portfolio-item{
+    overflow: hidden;
+    border-radius: 5px;
+}
+.work .portfolio-item p{
+    margin-bottom: 0%;
+}
+.work .portfolio-text{
+    z-index: 999;
+    display: none;
+    margin-top: -65px;
+    position: relative;
+    background: white;
+    text-align: center;
+}
+.work .portfolio-item:hover .portfolio-text{
+    display: block;
+}
+.work .portfolio-item img{
+    z-index: 0;
+    transition: .5s;
+    margin: 0%;
+}
+.work .portfolio-item:hover img{
+     transform: translateY(-20px) scale(1.05) rotate(3deg);
+}
+/* service */
+.blogs-div{
+    padding: 2rem 1rem;
+    margin-top:0;
+    transition: margin .5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.blogs-div p{
+    color: gray;
+}
+.blogs-div i{
+    color: crimson;
+}
+.blogs-div:hover{
+    margin: -10px auto 0;
+    box-shadow: 0 0 3px black;
+}
+.blogs-div:hover i{
+    color: black;
+}
+.team .team-card{
+    position: relative;
+}
+.team .team-card .team-info{
+    width: 70%;
+    position: absolute;
+    bottom: -11%;
+    background-color: white;
+    left: 15%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px #66606047;
+}
+.team .team-card:hover .team-info{
+    bottom: -8%;
+    transition: .5s;
+}
+.team .team-card img:hover{
+    filter: opacity(.4);
+}
+.resume p {
+    border: 1px solid #d0d0d0;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 5px 15px;
+    border-radius: 50px;
+    background-color: rgb(228, 211, 211);
+}
+.resume p button{
+    border-radius: 10px;
+    padding: 2px 7px;
+}
+@media screen and (max-width:767px){
+    .service .resume p{
+        display: block;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 1px solid #d0d0d0;
+        text-align: center;
+    }
+    .team .team-card .team-info{
+        bottom: 2%;
+    }
+    .team .team-card:hover .team-info{
+        bottom: 4%;
+    }
+}

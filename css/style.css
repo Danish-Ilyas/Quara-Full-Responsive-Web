@@ -1,0 +1,215 @@
+body {
+    font-family: "Lato", sans-serif;
+    overflow-x: hidden !important;
+    font-size: 16px;
+    color: #35404e;
+}
+.btn-danger:hover {
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+.bg-gray{
+    background-color: #efefef;
+}
+.navbar{
+    z-index: 999;
+}
+.navbar-brand{
+    font-weight: 700;
+    font-size: 26px;
+    padding: 3px;
+    letter-spacing: 1px;
+    z-index: 999;
+}
+.banner{
+    background: linear-gradient(0deg, rgb(0 0 0 / 48%), rgb(0 0 0 / 76%)), url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.testimonial{
+    background-image: url('../images/cta.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+.stars{
+    color: orange;
+}
+.testimonial-content{
+    background: white;
+    box-shadow: 0px 0px 5px slategrey ;
+    border-radius: 10px;
+}
+.carousel-item{
+    text-align: center;
+    height: 300px;
+}
+.carousel-item img {
+    width: 100px !important;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+}
+.carousel-item .carousel-caption{
+    color: #333;
+}
+.carousel-indicators [data-bs-target]{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid #f0caca;
+    background: #f0caca;
+    transition: width .5s;
+}
+.carousel-indicators [data-bs-target].active{
+    background:#da7a7a;
+    width: 20px;
+    border-radius: 30px;
+}
+.carousel{
+    z-index: 666;
+    margin-bottom: -65px;
+    margin-top: 100px;
+}
+.job .resume p{
+    width: max-content;
+    margin: auto;
+    padding: 5px 15px;
+    border-radius: 50px;
+    border:1px solid #d0d0d0;
+}
+.job .resume p button{
+    border-radius: 10px;
+    padding: 2px 7px;
+}
+.team .team-card{
+    position: relative;
+}
+.team .team-card .team-info{
+    width: 70%;
+    position: absolute;
+    bottom: -11%;
+    background-color: white;
+    left: 15%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px #66606047;
+    transition: bottom .5s;
+}
+.team .team-card:hover .team-info{
+    bottom: -8%;
+}
+
+.team .team-card img:hover{
+    filter: opacity(.4);
+}
+.blog .blog-images .author{
+    padding-top: 10px;
+    font-weight: bold;
+}
+.blog .blog-images .author img{
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.secter{
+    position: relative;
+    border: none;
+}
+.secter .card-body{
+    margin-bottom: -8%;
+    background-color: white;
+    border: 1px solid black;
+}
+.accordion-button:focus{
+    box-shadow: unset;
+    border-color: unset;
+}
+.accordion-button::after{
+    background-image: unset;
+    content: "\f078";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: unset;
+    content: "\f077";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+                /* Responsive starts */
+
+
+@media screen and (max-width:567px){
+    .testimonial .carousel{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .job .resume p{
+        display: block;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border:1px solid #d0d0d0;
+        text-align: center;
+    }
+    .job .resume p button{
+        border-radius: 0px;
+        display: block;
+        margin: auto;
+    }
+    .job .resume p i,
+    .job .resume p span
+    {
+        display: block;
+    }
+    .team .team-card .team-info{
+        bottom: 2%;
+    }   
+    .team .team-card:hover .team-info{
+        bottom: 5%;
+    }
+    .secter .card-body {
+        margin-bottom: -25%;
+    }
+    .footer .landing,.about,.location{
+        padding-left: 30px;
+    }
+    .blog .card-body .last{
+        margin-bottom:-40%;
+    }
+}
+
+@media screen and (max-width:767px){
+    .team .team-card .team-info{
+        bottom: 2%;
+    }
+    .team .team-card:hover .team-info{
+        bottom: 5%;
+    }
+    .blog .last{
+        margin-bottom: -25%;
+    }
+}
+@media screen and (max-width:991px){
+    .blog .last{
+        margin-bottom: -15%;
+    }
+}
+
+@media screen and (max-width:479px){
+
+    .blog .last{
+        margin-bottom: -30%;
+    }
+}
